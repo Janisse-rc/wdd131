@@ -1,0 +1,52 @@
+:root {
+    --accent2-color: #cfdcda;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    --light-color: #ffe57e;
+    --primary-color: #2d2d2d;
+    --secondary-color: #000;
+    --main-content-color: #b3b3b3;
+    --accent1-color: #fff;
+}
+
+header span{
+    background-color: var(--accent2-color);
+    display: block;
+    height: 5rem;
+}
+
+nav {
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 5rem;
+        background-color: var(--secondary-color);
+        color: var(--accent1-color);
+}
+
+main{
+    width: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /*horizontal and center*/
+}
+
+main h1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+footer {
+    display: grid;
+    grid-row-start: 4;
+    grid-column: 1/5;
+    height: 10rem;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    justify-content: center;
+    text-align: center;
+}
