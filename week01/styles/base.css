@@ -13,37 +13,51 @@ header span{
     background-color: var(--accent2-color);
     display: block;
     height: 5rem;
+    align-content: center;
+    text-align: center;
 }
 
 nav {
     display: flex;
+    justify-content: space-around;
+    gap: 7rem;
     height: 2.5rem;
     justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 5rem;
-        background-color: var(--secondary-color);
-        color: var(--accent1-color);
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 main{
-    width: 7rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    width: 45rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     /*horizontal and center*/
 }
 
 main h1{
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+.card {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
+.card img {
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+}
 footer {
     display: grid;
-    grid-row-start: 4;
-    grid-column: 1/5;
     height: 10rem;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
