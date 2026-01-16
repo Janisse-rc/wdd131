@@ -51,11 +51,7 @@ main h1{
     grid-column-end: 3;
 }
 
-.card img {
-    justify-content: right;
-    align-items: right;
-    text-align: right;
-}
+
 footer {
     display: grid;
     height: 10rem;
