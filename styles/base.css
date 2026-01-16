@@ -29,7 +29,6 @@ nav {
     font-size: 2rem;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
 }
@@ -37,7 +36,6 @@ nav {
 nav a{
     text-decoration: none;
 }
-
 nav a:hover {
     text-decoration: overline;
 }
