@@ -9,6 +9,10 @@
     --accent1-color: #fff;
 }
 
+header{
+    font-size: 2rem;
+}
+
 header span{
     background-color: var(--accent2-color);
     display: block;
@@ -21,12 +25,21 @@ nav {
     display: flex;
     justify-content: space-around;
     gap: 7rem;
-    height: 2.5rem;
+    height: 5rem;
+    font-size: 2rem;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline;
 }
 
 main{
