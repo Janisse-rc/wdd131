@@ -23,6 +23,11 @@ button.addEventListener('click', function () {
         //Populate the button textContent with a X
         deleteButton.textContent = '✖️';
         
+        //Add delete functionality
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            input.focus();
+        });
         //Append the li element variable with the delete button.
         li.append(deleteButton);
 
@@ -36,8 +41,3 @@ button.addEventListener('click', function () {
     input.focus();
 });
 
-deleteButton.addEventListener('click', function () {
-    list.removeChild(li);
-    input.value = '';
-    input.focus();
-});
