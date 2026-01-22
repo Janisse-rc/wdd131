@@ -1,5 +1,5 @@
 const radiusOutput = document.getElementById('radius');
-const areaOutput = document.querySelector('area');
+const areaOutput = document.querySelector('#area');
 
 let area = 0;
 const PI = 3.14159;
@@ -11,5 +11,5 @@ areaOutput.textContent = area;
 
 radius = 20;
 area = PI * radius * radius;
-radiusOutput.textContent = radius;
-areaOutput.textContent = area;
+radiusOutput.innerHTML = radius;    //innerHTML and text.Content are the same 
+areaOutput.innerHTML = area;
