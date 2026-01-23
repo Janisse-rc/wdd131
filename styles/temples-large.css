@@ -1,11 +1,26 @@
 @media screen and (min-width: 500px) {
     header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         background-color: #000;
         color: #fff;
     }
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
 
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
