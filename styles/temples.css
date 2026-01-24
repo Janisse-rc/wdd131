@@ -21,7 +21,7 @@ body {
 
 
 header {
-    background-color: var(--accent2-color);
+    background-color: #c780f7;
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
