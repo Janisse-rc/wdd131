@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --accent2-color: #cfdcda;
     --heading-font: "Playfair Display", serif;
@@ -9,61 +15,54 @@
     --accent1-color: #fff;
 }
 
-header {
-    font-size: 1.5rem;
-}
-
-header, main{
-    margin: 0 auto;
-}
-header span {
-    background-color: var(--accent2-color);
-    display: block;
-    height: 5rem;
-    align-content: center;
-    text-align: center;
+body {
     font-family: var(--body-font);
 }
 
-nav {
-    display: flex;
-    margin: 0 auto;
-    /*automatically it calculates the left and right margins to separate equitably, settings its top and bottom to 0 */
-    height: 5rem;
-    font-size: 1.5rem;
-    justify-content: space-around;
-    /*give space around the options*/
-    align-items: center;
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
+
+header {
+    background-color: var(--accent2-color);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    font-family: var(--heading-font);
 }
 
-nav a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
+header,
+main {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    padding: 1rem;
 }
-nav ul{
+
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+}
+
+
+nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
-nav a:hover {
-    text-decoration: underline double;
-    background-color: #bbb;
-    color: #333;
-    font-weight: 700;
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
 }
 
-main {
-    text-align: center;
-    display: grid;
-    gap: 1rem;
-    max-width: 800px;
-    /*automatically it calculates the left and right margins to separate equitably, settings its top and bottom to 0 */
-    margin: 0 auto;
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
 }
 
 
@@ -75,40 +74,46 @@ footer {
     justify-content: center;
     text-align: center;
     margin-top: 2rem;
+    font-family: var(--heading-font);
 }
 
-/*New CSS*/
-.temples{
+/*New for project*/
+.temples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
     place-items: center;
+    
 }
-
+img{
+    width:100%;
+    height: auto;
+    margin: 0.5rem;
+}
 
 #menu {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color:#000;
+    color: #000;
     position: absolute;
-    top:1rem;
-    right:1rem;
+    top: 1rem;
+    right: 1rem;
 }
 
-#menu::before{
+#menu::before {
     content: '☰';
 }
 
-#menu.open::before{
+#menu.open::before {
     content: '❌';
 }
+
 .navigation {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    background-color: #333;
     color: #fff;
 }
 
@@ -119,6 +124,7 @@ footer {
     text-decoration: none;
     color: #fff;
 }
+
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
