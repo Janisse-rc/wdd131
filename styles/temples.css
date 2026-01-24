@@ -21,15 +21,19 @@ body {
 
 
 header {
-    background-color: #c780f7;
+    background-color: #4b007e;
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 30px #333;
     font-family: var(--heading-font);
+    color: #fff;
 }
 
+header span {
+    font-size: 1.5rem;
+}
 header,
 main {
     max-width: 800px;
@@ -48,7 +52,6 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    background-color: #333;
 }
 
 nav a {
@@ -57,7 +60,6 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    font-size: larger;
 }
 
 nav a:hover {
