@@ -1,0 +1,21 @@
+:root {
+    --accent2-color: #cfdcda;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    --light-color: #ffe57e;
+    --primary-color: #2d2d2d;
+    --secondary-color: #000;
+    --main-content-color: #b3b3b3;
+    --accent1-color: #fff;
+}
+
+header{
+    background-color: var(--accent2-color);
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
