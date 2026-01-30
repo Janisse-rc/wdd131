@@ -19,3 +19,13 @@ header{
     font-size: 1.5rem;
     padding: 1rem;
 }
+
+footer {
+    display: grid;
+    height: 8rem;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
