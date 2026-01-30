@@ -46,6 +46,7 @@ section {
 }
 
 picture img{
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -75,4 +76,34 @@ footer {
     .weather img{
         display: none;
     }
+    .hero picture{
+        position: relative;
+        display: inline-block;}
+
+    .hero picture img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .data{
+        position: absolute;
+        border: 1.8px solid rgb(0 0 0 / 0.2);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: #fff4c8;
+        top: 10%;
+        left: 0;
+        size: auto;
+    }
+    .weather {
+            position: absolute;
+            border: 1.8px solid rgb(0 0 0 / 0.2);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            background-color: #fff4c8;
+            top: 50%;
+            right: 0;
+            size: auto;
+        }
 }
