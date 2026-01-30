@@ -1,5 +1,7 @@
 * {
-    line-height: 2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 :root {
     --accent2-color: #cfdcda;
@@ -20,7 +22,6 @@ header{
     justify-content: center;
     font-family: var(--heading-font);
     font-size: 1.5rem;
-    padding: 1rem;
 }
 
 h2{
@@ -28,9 +29,11 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 section {
+    line-height: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -42,7 +45,12 @@ section {
     padding-right: 1rem;
 }
 
-img{
+picture img{
+    width: 100%;
+    height: auto;
+}
+
+.weather img{
     display: flex;
     align-items: center;
     justify-self: center;
@@ -56,4 +64,14 @@ footer {
     justify-content: center;
     text-align: center;
     margin-top: 2rem;
+}
+
+@media screen and (min-width: 500px){
+    
+    .icon h2::after {
+        content: "🌥️";
+    }
+    .weather img{
+        display: none;
+    }
 }
