@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent2-color: #cfdcda;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    --light-color: #ffe57e;
+    --primary-color: #2d2d2d;
+    --secondary-color: #000;
+    --main-content-color: #b3b3b3;
+    --accent1-color: #fff;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+
+header {
+    background-color: #4b007e;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    font-family: var(--heading-font);
+    color: #fff;
+}
+
+header span {
+    font-size: 1.5rem;
+}
+header,
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+
+footer {
+    display: grid;
+    height: 8rem;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: var(--heading-font);
+}
+
+/*New for project*/
+.temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    
+}
+img{
+    width:100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '❌';
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
