@@ -86,22 +86,21 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
     place-items: center;
-
-    
 }
+
 img{
     width:100%;
     height: auto;
-    margin: 0.5rem;
+    margin: 0;
     background: #000;
     animation: fade 15s;
-
+    display: block;
 }
 
-section{
+section{    /*the sections that were created from the js file*/
     border: 3px solid var(--primary-color);
     background-color: var(--main-content-color);
-    
+    padding: 0.5rem;
 }
 /*Lazyload*/
 

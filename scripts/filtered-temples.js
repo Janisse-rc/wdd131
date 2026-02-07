@@ -74,13 +74,44 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
+
+    {
+        templeName: "Barranquilla Colombia",
+        location: "Barranquilla, Colombia",
+        dedicated: "2018, December, 9",
+        area: 25349,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/barranquilla-colombia-temple/barranquilla-colombia-temple-1846.jpg"
+    },
+
+    {
+        templeName: "Arequipa Perú",
+        location: "Arequipa, Perú",
+        dedicated: "2019, December, 15",
+        area: 26969,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-7186-main.jpg"
+    },
+
+    {
+        templeName: "St. George Utah",
+        location: "St. George, Utah, United States",
+        dedicated: "2019, December, 15",
+        area: 26969,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
+    },
+
     // Add more temple objects here...
 ];
 
-createTempleCard();
+createTempleCard(temples);
+//Display is controlled by page-specific JS files.
 
-function createTempleCard() {
-    temples.forEach((temple) => {
+function createTempleCard(templeList) {
+    document.querySelector(".res-grid").innerHTML = "";
+
+    templeList.forEach((temple) => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -96,12 +127,15 @@ function createTempleCard() {
         img.setAttribute("alt", `${temple.templeName} Temple`)
         img.setAttribute("loading", "lazy");
 
-        card.appendChild(name);
-        card.appendChild(location);
-        card.appendChild(dedication);
-        card.appendChild(area);
-        card.appendChild(img);
+        //card.appendChild(name);
+        //card.appendChild(location);
+        //card.appendChild(dedication);
+        //card.appendChild(area);
+        //card.appendChild(img);
 
+        card.append(name, location, dedication, area, img);
         document.querySelector(".res-grid").appendChild(card);
     });
 }
+
+
