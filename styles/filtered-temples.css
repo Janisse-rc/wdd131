@@ -8,7 +8,6 @@
     --accent2-color: #cfdcda;
     --heading-font: "Playfair Display", serif;
     --body-font: "Roboto", sans-serif;
-    --light-color: #ffe57e;
     --primary-color: #2d2d2d;
     --secondary-color: #000;
     --main-content-color: #b3b3b3;
@@ -81,18 +80,39 @@ footer {
     font-family: var(--heading-font);
 }
 
-/*New for project*/
+/*New for project lazyload*/
 .res-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
     place-items: center;
+
     
 }
 img{
     width:100%;
     height: auto;
     margin: 0.5rem;
+    background: #000;
+    animation: fade 15s;
+
+}
+
+section{
+    border: 3px solid var(--primary-color);
+    background-color: var(--main-content-color);
+    
+}
+/*Lazyload*/
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #menu {
