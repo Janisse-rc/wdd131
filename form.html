@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Janisse</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Janisse Rodriguez | Product Review Form">
+    <meta name="author" content="Janisse Rodriguez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/6?lang=spa&id=p34#p34">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Janisse Alondra Rodriguez Cumba</h1>
+            <form method="get" action ="review.html">
+                <fieldset>
+                    <legend>Product Name</legend>
+                    <select id="product" name="product" required>
+                        <option value="">Select a Product</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Overall Rating</legend>
+                        <label><input type="radio" name="rating" value="one" required>1</label> <!--"type" gives different keyboards to just show letters, dates and add @,/.-->
+                        <label><input type="radio" name="rating" value="two" required>2</label>
+                        <label><input type="radio" name="rating" value="three" required>3</label>
+                        <label><input type="radio" name="rating" value="four" required>4</label>
+                        <label><input type="radio" name="rating" value="five" required>5</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Date of Installation</legend>
+                    <input id="date" type="date" name="dateInstal" required> <!--"type" gives different keyboards to show dd/mm/aaaa -->
+                    
+                </fieldset>
+
+            </form>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> ⭐Janisse Rodriguez⭐ Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
