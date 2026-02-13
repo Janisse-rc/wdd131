@@ -33,3 +33,21 @@ const products = [
         averagerating: 5.0
     }
 ];
+
+
+createTempleCard(products);
+//Display is controlled by page-specific JS files.
+
+function createTempleCard(productList) {
+    document.querySelector(".res-grid").innerHTML = "";
+
+    productList.forEach((product) => {
+        let card = document.createElement("option");
+
+        card.innerHTML = `<option value = " "></option> ${product.name}`;
+        
+        option.setAttribute("value", `${product.name}`)
+        
+        document.querySelector(".res-grid").appendChild(select);
+    });
+}
