@@ -33,13 +33,13 @@
                 <fieldset>
                     <legend>Product Name</legend>
                     <select id="product" name="product" required>
-                        <option value="">Select a Product</option>
+                        <option placeholder="Select a Product ..." disabled></option>
                     </select>
                 </fieldset>
 
                 <fieldset>
                     <legend>Overall Rating</legend>
-                        <label><input type="radio" name="rating" value="one" required>1</label> <!--"type" gives different keyboards to just show letters, dates and add @,/.-->
+                        <label><input type="radio" name="rating" value="one" required>1</label> <!--"type" gives different keyboards to just show letters, dates or add @,/.-->
                         <label><input type="radio" name="rating" value="two" required>2</label>
                         <label><input type="radio" name="rating" value="three" required>3</label>
                         <label><input type="radio" name="rating" value="four" required>4</label>
@@ -48,9 +48,33 @@
 
                 <fieldset>
                     <legend>Date of Installation</legend>
-                    <input id="date" type="date" name="dateInstal" required> <!--"type" gives different keyboards to show dd/mm/aaaa -->
+                    <input id="dateI" type="date" name="dateInstal" required> <!--this "type" ""date"" gives a keyboard to show dd/mm/aaaa -->
                     
                 </fieldset>
+
+                <fieldset>
+                    <legend>Useful Features</legend>
+                    <label><input id="durability" type="checkbox" name="features" value="durability">Durability</label> <!-- this "type" ""checkbox"" shows as a box to select -->
+                    <label><input id="ease" type="checkbox" name="features" value="ease">Ease of Use</label>
+                    <label><input id="performance" type="checkbox" name="features" value="performance">Performance</label>
+                    <label><input id="design" type="checkbox" name="features" value="design">Design</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Written Review</legend>
+                    <p>(Optional)</p>
+                    <textarea id="review" name="reviewContent"></textarea>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Name</legend>
+                    <p>(Optional)</p>
+                    <input type="text" id ="name" name="userName"></input> <!--"type" ""text"" gives a keyboards that shows letters-->
+                
+                </fieldset>
+
+                    <input type="submit" value="Post Review"><!--"type" ""text"" gives a keyboards that shows letters-->
 
             </form>
     </main>
