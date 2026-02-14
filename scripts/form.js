@@ -35,19 +35,19 @@ const products = [
 ];
 
 
-createTempleCard(products);
+createProductOptions(products);
 //Display is controlled by page-specific JS files.
 
-function createTempleCard(productList) {
-    document.querySelector(".res-grid").innerHTML = "";
+function createProductOptions(productList) {
+
+    const select = document.querySelector("#product");      //Select my <select> element
 
     productList.forEach((product) => {
-        let card = document.createElement("option");
+        const option = document.createElement("option");   //Creates an option element
 
-        card.innerHTML = `<option value = " "></option> ${product.name}`;
-        
-        option.setAttribute("value", `${product.name}`)
-        
-        document.querySelector(".res-grid").appendChild(select);
+        option.value = product.id;      //Sets value properly
+        option.textContent = product.name;      //Shows product name
+
+        select.appendChild(option);     //Adds it inside the select
     });
 }
