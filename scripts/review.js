@@ -1,15 +1,14 @@
-function updateReviewCount() {
-    const params = new URLSearchParams(window.location.search);
+let reviewCount = localStorage.getItem("reviewCount");
 
-    if (params.has("product") && params.has("rating")) {
-        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
-        reviewCount++;
+if (reviewCount === null) {
+    reviewCount = 0;
 
-        localStorage.setItem("reviewCount", reviewCount);
-
-        window.history.replaceState({}, document.title, window.location.pathname);
-
-        console.log(`Total Reviews Stored: ${reviewCount}`);
-    }
+} else {
+    reviewCount = Number(reviewCount);
 }
-updateReviewCount();
+
+reviewCount++;
+
+localStorage.setItem("reviewCount", reviewCount);
+
+document.getElementById("reviewCount").textContent = reviewCount;
