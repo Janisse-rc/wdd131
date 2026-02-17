@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - EnglishClasses</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals | Janisse Rodriguez | EnglishClasses around the World">
+    <meta name="author" content="Janisse Rodriguez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/english-classes.css">
+    <link rel="stylesheet" href="styles/english-classes-large.css">
+    <script src="scripts/english-classes.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">EnglishClasses around the World</span>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="english-classes.html">Classes</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Campus</h1>
+        <div class="hero">
+            <picture>
+                <source srcset="images/classroom-larger.webp" media="(min-width: 1000px)">
+                <source srcset="images/classroom-medium.webp" media="(min-width: 500px)">
+                <img src="images/english-teacher-small.webp" alt="South Korea" width="400" height="200">
+            </picture>
+
+            <div class="data">
+                <div class="icon">
+                    <h2>In person</h2>
+                </div>
+                <picture>
+                    <source srcset="images/english-teacher-medium.webp" media="(min-width: 500px)">
+                    <img src="images/children-icon.svg" alt="Children Icon">
+                </picture>
+
+                <section>
+                    <div class="inf">
+                        <p>Our campus are located in:
+                            <br>▪️Lima,Peru<br>▪️Seoul, South Korea<br>▪️Bogota,Colombia<br>▪️Roma, Italy<br>▪️Osaka, Japan</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="weather">
+                <div class="icon">
+                    <h2>Online</h2>
+                </div>
+
+                <picture>
+                    <source srcset="images/for-adults.webp" media="(min-width: 500px)">
+                    <img src="images/adults-icon.svg" alt="Adults Icon">
+                </picture>
+
+                <section>
+                    <div class="inf">
+                        <p>Everywhere you encounter, you can access with your mobile device to your classes and enrich your professors' teaches.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> ⭐Janisse Rodriguez⭐ Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

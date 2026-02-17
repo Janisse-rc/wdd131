@@ -1,0 +1,55 @@
+@media screen and (min-width: 500px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /**/
+
+
+
+    .icon h2::after {
+        content: "📚";
+    }
+    .weather img , .data img{
+        display: none;
+    }
+
+    .hero picture {
+        display: absolute;
+        width: 100%;
+        height: auto;
+    }
+    
+    .weather img,
+    .data img {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        width: 500px;
+    }
+    .weather section, .data section{
+        display: block;
+        width: 500px;
+        justify-self: center;
+    }
+}

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    --primary-color: #000;
+    --secondary-color: #58def3;
+    --background-color: #fcf0d4;
+}
+
+
+body {
+    font-family: var(--body-font);
+}
+
+
+header {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header,
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    margin: 1rem;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+
+footer {
+    display: grid;
+    height: 8rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: var(--heading-font);
+}
+
+/*New for project lazyload*/
+
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background: #000;
+    animation: fade 15s;
+    display: block;
+}
+
+section {
+    /*the sections that were created from the js file*/
+    border: 3px solid #2d2d2d;
+    background-color: var(--background-color);
+    padding: 0.5rem;
+}
+
+/*Lazyload*/
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '❌';
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+/*Final Project*/
+h2 {
+    font-family: var(--body-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+section {
+    line-height: 2;
+}
+
+.subt {
+    font-family: var(--body-font);
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: .5rem;
+}
+
+.weather img, .data img {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 200px;
+}

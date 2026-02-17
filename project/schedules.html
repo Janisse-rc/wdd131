@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - EnglishClasses</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals | Janisse Rodriguez | EnglishClasses around the World">
+    <meta name="author" content="Janisse Rodriguez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/english-classes.css">
+    <link rel="stylesheet" href="styles/english-classes-large.css">
+    <link rel="stylesheet" href="styles/english-classes-form.css">
+    <script src="scripts/english-classes.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">EnglishClasses around the World</span>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="english-classes.html">Classes</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Schedules</h1>
+        <div class="hero">
+            <picture>
+                <source srcset="images/classroom-larger.webp" media="(min-width: 1000px)">
+                <source srcset="images/classroom-medium.webp" media="(min-width: 500px)">
+                <img src="images/english-teacher-small.webp" alt="South Korea" width="400" height="200">
+            </picture>
+
+            <div class="data">
+                <div class="icon">
+                    <h2>Monday-Friday</h2>
+                </div>
+                <picture>
+                    <source srcset="images/english-teacher-medium.webp" media="(min-width: 500px)">
+                    <img src="images/children-icon.svg" alt="Children Icon">
+                </picture>
+
+                <section>
+                    <div class="inf">
+                        <p>Designed for people who are available all week to manage their time for assignments and great success.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="weather">
+                <div class="icon">
+                    <h2>Saturdays</h2>
+                </div>
+
+                <picture>
+                    <source srcset="images/for-adults.webp" media="(min-width: 500px)">
+                    <img src="images/adults-icon.svg" alt="Adults Icon">
+                </picture>
+
+                <section>
+                    <div class="inf">
+                        <p>For workers and students who are available only one day each week to attend classes.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        
+        <form method="get" action="review.html" class="wf1">
+            <h2>Enrollment Form</h2>
+            <fieldset>
+                <legend>Schedule</legend>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Overall Rating</legend>
+        
+                <label><input type="radio" id="one" name="rating" value="one" required>1</label>
+                <!--"type" gives different keyboards to just show letters, dates or add @,/.-->
+                <label><input type="radio" id="two" name="rating" value="two" required>2</label>
+                <label><input type="radio" id="three" name="rating" value="three" required>3</label>
+                <label><input type="radio" id="four" name="rating" value="four" required>4</label>
+                <label><input type="radio" id="five" name="rating" value="five" required>5</label>
+        
+            </fieldset>
+        
+            <fieldset>
+                <legend>Your birthday:</legend>
+                <input id="dateI" type="date" name="dateInstal" required>
+                <!--this "type" ""date"" gives a keyboard to show dd/mm/aaaa -->
+        
+            </fieldset>
+        
+            <fieldset>
+                <legend>Modality</legend>
+                <label><input id="inperson" type="checkbox" name="modality" value="inperson">In person</label>
+                <!-- this "type" ""checkbox"" shows as a box to select -->
+                <label><input id="online" type="checkbox" name="modality" value="online">Online</label>
+
+            </fieldset>
+        
+            <fieldset>
+                <legend>Expectations:</legend>
+                <textarea id="review" name="reviewContent"></textarea>
+        
+            </fieldset>
+        
+            <fieldset>
+                <legend>Your Full Name:</legend>
+                <input type="text" id="name" name="userName" required><!--"type" ""text"" gives a keyboards that shows letters-->
+        
+            </fieldset>
+
+            <fieldset>
+                <legend>Email:</legend>
+                <input type="email" id="email" name="userEmail" required><!--"type" ""email"" gives a keyboards that shows @ and .-->
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Phone Number:</legend>
+                <input type="tel" id="phoneN" name="phoneNumber" required><!--"type" ""tel"" gives a keyboards of numbers.-->
+            
+            </fieldset>
+        
+            <input type="submit" value="Submit the enrollment form"><!--"type" ""submit""-->
+        
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> ⭐Janisse Rodriguez⭐ Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
