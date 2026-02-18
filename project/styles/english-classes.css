@@ -172,8 +172,6 @@ section {
 
 picture img {
     display: block;
-    width: 100%;
-    height: auto;
     margin-bottom: .5rem;
 }
 
@@ -181,5 +179,5 @@ picture img {
     display: flex;
     align-items: center;
     justify-self: center;
-    width: 200px;
+    width: 100px;
 }
