@@ -14,10 +14,7 @@ button.addEventListener('click', function () {
 
         //Create list item
         const li = document.createElement('li');
-        //We identified this variable as li(that is next to const), howerver, that was just
-        // for simplicity. The variable identifier/name did not have
-        // to be named the same as the element being created.
-
+        
         const span = document.createElement('span');
         span.textContent = chapter
 
@@ -34,6 +31,7 @@ button.addEventListener('click', function () {
         });
 
         li.append(span);
+        
         //Append the li element variable with the delete button.
         li.append(deleteButton);
 
