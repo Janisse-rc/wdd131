@@ -30,29 +30,17 @@ h1 {
     padding: .5rem 2%;
 }
 
-.wf1 legend {
+.wf1 legend, label {
     color: #000;
     padding: 0 .5rem;
     font-weight: bold;
+    padding-bottom: 2rem;
 }
 
 .wf1 input,
 select,
 textarea {
     margin-left: .5rem;
-}
-
-
-.wf1 label {
-    display: block;
-    padding-top: 1rem;
-    font-size: .9rem;
-}
-
-
-.wf1 p {
-    margin: 1rem;
-    color: blue;
 }
 
 .wf1 input[type="date"],
@@ -79,17 +67,6 @@ textarea {
     width: 100%;
     margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
-}
-
-footer {
-    display: grid;
-    height: 8rem;
-    background-color: #000;
-    color: #fff;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
-    font-family: var(--heading-font);
 }
 
 @media screen and (min-width: 500px) {
