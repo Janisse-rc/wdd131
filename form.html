@@ -34,39 +34,47 @@
                 <fieldset>
                     <legend>Overall Rating</legend>
 
-                        <label><input type="radio" id="one" name="rating" value="one" required>1</label> <!--"type" gives different keyboards to just show letters, dates or add @,/.-->
-                        <label><input type="radio" id="two" name="rating" value="two" required>2</label>
-                        <label><input type="radio" id="three" name="rating" value="three" required>3</label>
-                        <label><input type="radio" id="four" name="rating" value="four" required>4</label>
-                        <label><input type="radio" id="five" name="rating" value="five" required>5</label>
-
+                        <input type="radio" id="one" name="rating" value="one" required> <!--"type" gives different keyboards to just show letters, dates or add @,/.-->
+                        <label for="one">1</label> 
+                        <label><input type="radio" id="two" name="rating" value="two" required>
+                        <label for="two">2</label>
+                        <label><input type="radio" id="three" name="rating" value="three" required>
+                        <label for="three">3</label>
+                        <label><input type="radio" id="four" name="rating" value="four" required>
+                        <label for="four">4</label>
+                        <label><input type="radio" id="five" name="rating" value="five" required>
+                        <label for="five">5</label>
                 </fieldset>
 
                 <fieldset>
-                    <label>Date of Installation
-                    <input id="dateI" type="date" name="dateInstal" required></label> <!--this "type" ""date"" gives a keyboard to show dd/mm/aaaa -->
+                    <label for="dateI">Date of Installation</label>
+                    <input id="dateI" type="date" name="dateInstal" required> <!--this "type" ""date"" gives a keyboard to show dd/mm/aaaa -->
                     
                 </fieldset>
 
                 <fieldset>
                     <legend>Useful Features</legend>
-                    <label><input id="durability" type="checkbox" name="features" value="durability">Durability</label> <!-- this "type" ""checkbox"" shows as a box to select -->
-                    <label><input id="ease" type="checkbox" name="features" value="ease">Ease of Use</label>
-                    <label><input id="performance" type="checkbox" name="features" value="performance">Performance</label>
-                    <label><input id="design" type="checkbox" name="features" value="design">Design</label>
+                    <input id="durability" type="checkbox" name="features" value="durability">
+                    <label for ="durability">Durability</label> <!-- this "type" ""checkbox"" shows as a box to select -->
+                    <input id="ease" type="checkbox" name="features" value="ease">
+                    <label for="ease">Ease of Use</label>
+                    <input id="performance" type="checkbox" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                    <input id="design" type="checkbox" name="features" value="design">
+                    <label for="design">Design</label>
                 </fieldset>
 
                 <fieldset>
-                    <label>Written Review
-                    (Optional)
-                    <textarea id="review" name="reviewContent"></textarea></label>
+                    <label for="review">Written Review
+                    (Optional)</label>
+                    <textarea id="review" name="reviewContent"></textarea>
                     
                 </fieldset>
 
                 <fieldset>
-                    <label>Your Name
-                    (Optional)
-                    <input type="text" id="name" name="userName"></label><!--"type" ""text"" gives a keyboards that shows letters-->
+                    <label for="name">Your Name
+                    (Optional)</label>
+                    <input type="text" id="name" name="userName"><!--"type" ""text"" gives a keyboards that shows letters-->
                 
                 </fieldset>
 
