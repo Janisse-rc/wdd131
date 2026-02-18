@@ -10,9 +10,9 @@ button.addEventListener('click', function () {
     const chapter = input.value.trim();
 
     if (chapter !== '') {
-        //buttom
+        /*buttom
 
-        //Create list item
+        Create list item*/
         const li = document.createElement('li');
         
         const span = document.createElement('span');
