@@ -15,7 +15,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/english-classes.css">
     <link rel="stylesheet" href="styles/english-classes-large.css">
+        <link rel="stylesheet" href="styles/expect-form.css">
     <script src="scripts/english-classes.js" defer></script>
+    <script src="scripts/expect-form.js" defer></script>
 </head>
 
 <body>
@@ -74,6 +76,11 @@
                 </section>
             </div>
         </div>
+
+        <label for="favchap"> You can type here your questions: </label>
+        <input type="text" id="favchap" placeholder="How many hours ...?">
+        <button type="button" id="addChapter">Add Question</button>
+        <ul id="list"></ul>
     </main>
     <footer>
         <p>©<span id="currentyear"></span> ⭐Janisse Rodriguez⭐ Peru</p>
