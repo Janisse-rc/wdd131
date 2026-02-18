@@ -12,3 +12,7 @@ reviewCount++;
 localStorage.setItem("reviewCount", reviewCount);
 
 document.getElementById("reviewCount").textContent = reviewCount;
+
+let review = document.createElement("p");
+review.innerHTML = `<span class = "reviewCount">Submission Number:</span> ${reviewCount}`;
+document.querySelector(".res-grid").appendChild(review);
