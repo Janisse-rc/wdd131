@@ -79,7 +79,7 @@
         <form method="get" action="e-review.html" class="wf1">
             <h2>Enrollment Form</h2>
             <fieldset>
-                <legend>Schedule</legend>
+                <label for="product">Schedule</label>
                 <select id="product" name="product" required>
                     <option value="" disabled selected>Select a schedule ...</option>
                 </select>
@@ -88,17 +88,22 @@
             <fieldset>
                 <legend>Overall Rating</legend>
         
-                <label><input type="radio" id="one" name="rating" value="one" required>1</label>
-                <!--"type" gives different keyboards to just show letters, dates or add @,/.-->
-                <label><input type="radio" id="two" name="rating" value="two" required>2</label>
-                <label><input type="radio" id="three" name="rating" value="three" required>3</label>
-                <label><input type="radio" id="four" name="rating" value="four" required>4</label>
-                <label><input type="radio" id="five" name="rating" value="five" required>5</label>
+                    <input type="radio" id="one" name="rating" value="one" required>
+                    <!--"type" gives different keyboards to just show letters, dates or add @,/.-->
+                    <label for="one">1</label>
+                    <input type="radio" id="two" name="rating" value="two" required>
+                    <label for="two">2</label>
+                    <input type="radio" id="three" name="rating" value="three" required>
+                    <label for="three">3</label>
+                    <input type="radio" id="four" name="rating" value="four" required>
+                    <label for="four">4</label>
+                    <input type="radio" id="five" name="rating" value="five" required>
+                    <label for="five">5</label>
         
             </fieldset>
         
             <fieldset>
-                <legend>Your birthday:</legend>
+                <label for="dateI">Your birthday:</label>
                 <input id="dateI" type="date" name="dateInstal" required>
                 <!--this "type" ""date"" gives a keyboard to show dd/mm/aaaa -->
         
@@ -106,32 +111,34 @@
         
             <fieldset>
                 <legend>Modality</legend>
-                <label><input id="inperson" type="checkbox" name="modality" value="inperson">In person</label>
+                <input id="inperson" type="checkbox" name="modality" value="inperson">
+                <label for="inperson">In person</label>
                 <!-- this "type" ""checkbox"" shows as a box to select -->
-                <label><input id="online" type="checkbox" name="modality" value="online">Online</label>
+                <input id="online" type="checkbox" name="modality" value="online">
+                <label for="online">Online</label>
 
             </fieldset>
         
             <fieldset>
-                <legend>Expectations:</legend>
+                <label for="review">Expectations:</label>
                 <textarea id="review" name="reviewContent"></textarea>
         
             </fieldset>
         
             <fieldset>
-                <legend>Your Full Name:</legend>
+                <label for="name">Your Full Name:</label>
                 <input type="text" id="name" name="userName" required><!--"type" ""text"" gives a keyboards that shows letters-->
         
             </fieldset>
 
             <fieldset>
-                <legend>Email:</legend>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="userEmail" required><!--"type" ""email"" gives a keyboards that shows @ and .-->
             
             </fieldset>
 
             <fieldset>
-                <legend>Phone Number:</legend>
+                <label for="phoneN">Phone Number:</label>
                 <input type="tel" id="phoneN" name="phoneNumber" required><!--"type" ""tel"" gives a keyboards of numbers.-->
             
             </fieldset>
